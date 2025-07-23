@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kalkulator Sederhana</title>
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      margin-top: 50px;
+    }
+    input {
+      padding: 8px;
+      width: 100px;
+    }
+    button {
+      padding: 8px 16px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Kalkulator Penjumlahan</h2>
+  <input type="number" id="angka1" placeholder="Angka pertama">
+  +
+  <input type="number" id="angka2" placeholder="Angka kedua">
+  <button onclick="hitung()">=</button>
+  <p>Hasil: <span id="hasil"></span></p>
+
+  <script>
+    function hitung() {
+      var a = parseFloat(document.getElementById("angka1").value);
+      var b = parseFloat(document.getElementById("angka2").value);
+      var hasil = a + b;
+      document.getElementById("hasil").innerText = hasil;
+    }
+  </script>
+</body>
+</html>
